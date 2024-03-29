@@ -1,4 +1,26 @@
-body {}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/* Shared Style */
+.btn-primary {
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-second {
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+}
 
 /* Nav Related CSS */
 
@@ -9,7 +31,7 @@ nav {
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -23,6 +45,11 @@ nav ul li {
     margin-left: 1.5rem;
 }
 
+.menu-content {
+    display: flex;
+    align-items: center;
+}
+
 nav ul li a {
     text-decoration: none;
 }
@@ -32,7 +59,12 @@ nav ul li a {
     margin-left: 1.5rem;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 2px 20px;
+    padding: 0px 8px;
+    gap: 10px;
+}
+
+#icon1 {
+    color: red;
 }
 
 .image-content {
@@ -45,7 +77,7 @@ nav ul li a {
 /* Header Related CSS */
 
 .header {
-    width: 1400px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +89,8 @@ nav ul li a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.header-content{
+
+.header-content {
     padding-top: 5rem;
     padding-left: 7rem;
 }
@@ -75,16 +108,47 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.header-image{
+.header-image {
     width: 90%;
+}
+
+.hide {
+    display: none;
 }
 
 /* Mobile Device */
 @media screen and (max-width:576px) {
-    .header{
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Center text within header */
+    }
+    .image-content{
+       grid-template-columns: 1fr; 
+    }  
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-content{
+        padding-left: 0;
+    }
+
+    .header {
         flex-direction: column-reverse;
+        background-position: bottom;
     }
-    .nav-container{
-        
+
+    .menu-content {
+        flex-direction: column;
+        text-align: center;
     }
+
+    .header-images {
+       width: 90%;
+    }
+
 }
