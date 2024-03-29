@@ -125,6 +125,9 @@ nav ul li a {
         justify-content: center;
         text-align: center; /* Center text within header */
     }
+    .header{
+        padding: 0;
+    }
     .image-content{
        grid-template-columns: 1fr; 
     }  
