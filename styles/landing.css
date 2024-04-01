@@ -128,7 +128,7 @@ nav ul li a {
     margin-bottom: 0;
 }
 
-.we-gamer-title {
+.we-gamer-title,.online-funny {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -146,6 +146,73 @@ nav ul li a {
 }
 
 
+/* Online Games Section CSS */
+.online-games{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.online-img-container{
+    display: flex;
+}
+.online-games-title, .play-instantly-title{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.online-games-des,.play-instantly-des{
+    margin-top: 0;
+    color: #534C64;
+    font-weight: 400;
+}
+
+
+/* Play Instantly */
+
+.play-instantly{
+    width: 85%;
+    margin-top: 2.5rem;
+}
+.play-instantly-container{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+.play-instantly-content{
+    text-align: right;
+}
+
+.play-instantly-img{
+    position: relative;
+    
+}
+.play-img-2{
+    width: 30%;
+    position: absolute;
+    left: -4.3rem;
+    bottom: -5.6rem;
+}
+
+/* Play Anywhere */
+.play-anywhere{
+    margin-top: 8rem;
+}
+
+.play-anywhere-content{
+    text-align: left;
+}
+.play-anywhere-img{
+    position: relative;
+    
+}
+.anywhere-img-2{
+    width: 30%;
+    position: absolute;
+    right: -4.3rem;
+    bottom: -5.6rem;
+}
 
 
 
@@ -201,4 +268,43 @@ nav ul li a {
     .we-gamer-image{
         width: 100%;
     }
+    /* Online Games */
+    .online-img-container{
+        flex-direction: column;
+    }
+    /* Play Instantly */
+    .play-instantly-container{
+        flex-direction: column;
+    }
+    .play-instantly-content{
+        text-align: center;
+    }
+    .play-img-1{
+        width: 100%;
+    }
+    .play-img-2{
+        width: 30%;
+        position: absolute;
+        left: -1rem;
+        bottom: -3rem;
+    }
+    /* Play Instantly */
+    .play-anywhere-content{
+        text-align: center;
+    }
+    #anywhere-container{
+        flex-direction: column-reverse;
+    }
+    .anywhere-img-1{
+        width: 100%;
+    }
+    .anywhere-img-2{
+        width: 30%;
+        position: absolute;
+        right: -1rem;
+        bottom: -3rem;
+    }
 }
+
+
+
